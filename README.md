@@ -1,5 +1,4 @@
-![alt text](https://www.casimages.com/i/190711025434577567.png)
-![Screenshot](1kubatorimg.png)
+
 ![1kubatorimg](https://user-images.githubusercontent.com/48042853/61052772-60041380-a3ec-11e9-8942-0d83b3393ca2.png)
 
 # 1kubator-test
