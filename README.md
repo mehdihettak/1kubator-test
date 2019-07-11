@@ -1,4 +1,4 @@
-![alt text](https://www.casimages.com/i/190711025434577567.png.html)
+![alt text](https://www.casimages.com/i/190711025434577567.png)
 
 # 1kubator-test
 ## Technologies
