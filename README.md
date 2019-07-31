@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![1kubatorimg](https://user-images.githubusercontent.com/48042853/61052772-60041380-a3ec-11e9-8942-0d83b3393ca2.png)
 
-In the project directory, you can run:
+# 1kubator-test
+## Technologies
 
-### `npm start`
+React Native sera la seule technologie imposée ici.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Pour le stockage des utilisateurs (cf. section projet), vous êtes libre de vous y prendre selon vos habitudes ou bien de partir à la découverte d'une nouvelle technologie viable (cette technologie doit pouvoir faire l'objet d'un réel usage par la suite).
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Projet
 
-### `npm test`
+1. Choisir une API parmi [https://github.com/toddmotto/public-apis](https://github.com/toddmotto/public-apis) (il y en a pour tous les goûts)
+2. Implémenter un système d'inscription
+    - BONUS : Inscriptions via services tiers (facebook, github, google... au choix)
+3. Implémenter un système de connexion
+4. Implémenter une page d'accueil
+    - Accessible uniquement quand on est connecté
+    1. Affiche une liste d'éléments issus de l'API choisie
+        - BONUS : Système de pagination
+    2. Système de recherche (on va à l'essentiel)
+5. BONUS : Implémenter une page élément
+    - Réaliser cette page si l'API expose assez d'informations pour chaque élément
+    - Accessible uniquement quand on est connecté
+    1. Affiche toutes les informations d'un élément
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Consignes
 
-### `npm run build`
+Vous veillerez à garder en tête l'aspect générique dans la création de vos composants, si ces derniers le permettent. L'idée ici est de pouvoir réutiliser certains de vos composants dans d'autres applications afin de gagner du temps.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Par exemple, le parcours utilisateur relatif à l'inscription sera souvent le même d'une application à une autre. Il peut donc être pensé de façon générique pour être réutilisé sur d'autres applications par la suite. Gardez cela en tête !
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Cet aspect générique ne doit pas être bloquant dans votre réflexion. Tâchez de réaliser le projet en gardant cela en tête, de faire intervenir cet aspect au moment de la création de vos composants ou bien une fois que ces derniers sont en place.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Le principal est de pouvoir proposer un projet fonctionnel, le caractère générique est un plus.
