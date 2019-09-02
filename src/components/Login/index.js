@@ -105,7 +105,7 @@ function SignIn(props) {
     async function login() {
         try {
             await firebase.login(email, password)
-            props.history.replace('/dashboard')
+            props.history.push('/search')
         } catch (error) {
             alert(error.message)
         }

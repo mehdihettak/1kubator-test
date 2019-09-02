@@ -42,7 +42,7 @@ function HomePage(props) {
 					<VerifiedUserOutlined />
 				</Avatar>
 				<Typography component="h1" variant="h5">
-					Hello Guest!
+					Test Mehdi 1kubator ;)
 				</Typography>
 				<Button
 					type="submit"
