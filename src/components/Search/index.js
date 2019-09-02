@@ -3,6 +3,9 @@ import './search.css';
 import axios from 'axios';
 import Loader from './loader.gif';
 import PageNavigation from './index.js';
+import { withRouter } from 'react-router-dom'
+
+
 
 class Search extends  React.Component {
 
@@ -197,4 +200,5 @@ const showNextLink = totalPages > currentPageNo;
 }
 }
 
-export default Search;
+
+export default withRouter(Search)
