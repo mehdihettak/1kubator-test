@@ -1,14 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import './styles.css'
-import HomePage from '../HomePage'
-import Login from '../Login'
-import Register from '../Register'
+import React, { useState, useEffect } from 'react';
+import './styles.css';
+
+import Dashboard from '../Dashboard';
+import Details from '../Details';
+import HomePage from '../HomePage';
+import Login from '../Login';
+import Register from '../Register';
 import Search from "../Search";
-import Dashboard from '../Dashboard'
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import { CssBaseline, CircularProgress } from '@material-ui/core'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import firebase from '../firebase'
+
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { CssBaseline, CircularProgress } from '@material-ui/core';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import firebase from '../firebase';
+
 
 const theme = createMuiTheme()
 
@@ -26,6 +30,7 @@ export default function App() {
 	return firebaseInitialized !== false ? (
 		<MuiThemeProvider theme={theme}>
 			<CssBaseline />
+			
 			<Router>
 				<Switch>
 					<Route exact path="/" component={HomePage} />
@@ -33,8 +38,10 @@ export default function App() {
 					<Route exact path="/register" component={Register} />
 					<Route exact path="/dashboard" component={Dashboard} />
 					<Route exact path="/search" component={Search} />
+					<Route exact path="/details" component={Details} />
 				</Switch>
 			</Router>
+			
 		</MuiThemeProvider>
 	) : <div id="loader"><CircularProgress /></div>
 }

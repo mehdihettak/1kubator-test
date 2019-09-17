@@ -42,7 +42,7 @@ function Register(props) {
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
-	const [quote, setQuote] = useState('')
+	const [quote] = useState('')
 
 	return (
 		<main className={classes.main}>
